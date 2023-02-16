@@ -131,16 +131,21 @@
 
         #grid-p2 {
             display: grid;
-            grid-template-columns: auto auto auto; /* 1x3 */
+            grid-template-columns: 300px 300px 300px;
             grid-column-gap: 20px;
+            justify-content: space-evenly;
         }
 
         .place {
-            border: 1px solid red;
+            border: 1px solid #b95370;
         }
 
         .p1, .p2, .p3 {
             text-align: center;
+        }
+
+        .place:hover {
+            background-color: rgba(230, 116, 110, 0.5);
         }
     
     </style>
@@ -180,14 +185,20 @@
 
         <div id="grid-p2">
             <div class="place p1">
+                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvb2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Basic Dishes</h4>
             </div>
 
             <div class="place p2">
+                <img src="https://images.unsplash.com/photo-1511910849309-0dffb8785146?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZ2V0YWJsZSUyMGRpc2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Vegetable Dishes</h4>
             </div>
 
             <div class="place p3">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Desserts</h4>
             </div>
 
