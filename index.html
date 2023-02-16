@@ -138,16 +138,44 @@
             justify-content: space-evenly;
         }
 
-        .place {
-            border: 1px solid #b95370;
+        #grid-p3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 20px;
+            justify-content: space-evenly;
         }
 
-        .p1, .p2, .p3 {
+        .place {
+            border: 1px solid #b95370;
             text-align: center;
         }
 
         .place:hover {
             background-color: rgba(230, 116, 110, 0.5);
+        }
+
+        .box-p3 {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin: 80px auto;
+            background-image: url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .small-p3 {
+            border: 1px solid #91504d;
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content:center;
+            width: 200px;
+            height: 60px;
+            margin: 170px 43%;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: antiquewhite;
         }
     
     </style>
@@ -186,19 +214,19 @@
         </div>
 
         <div id="grid-p2">
-            <div class="place p1">
+            <div class="place">
                 <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvb2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
                     alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Basic Dishes</h4>
             </div>
 
-            <div class="place p2">
+            <div class="place">
                 <img src="https://images.unsplash.com/photo-1511910849309-0dffb8785146?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZ2V0YWJsZSUyMGRpc2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
                     alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Vegetable Dishes</h4>
             </div>
 
-            <div class="place p3">
+            <div class="place">
                 <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
                     alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
                 <h4>Desserts</h4>
@@ -207,7 +235,34 @@
         </div>
     </div>
 
-    <div id="page3">NEXT PAGE</div>
+    <div id="page3">
+        <div class="box-p3">
+            <div class="small-p3">
+                <h3>All Recipes</h3>
+            </div>
+
+        </div>
+
+        <div id="grid-p3">
+            <div class="place">
+                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" 
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
+                <h4>Breakfast</h4>
+            </div>
+
+            <div class="place">
+                <img src="https://images.unsplash.com/photo-1594834749740-74b3f6764be4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
+                <h4>Lunch</h4>
+            </div>
+
+            <div class="place">
+                <img src="https://images.unsplash.com/photo-1522666257812-173fdc2d11fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRpbm5lciUyMGRpc2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt="image not found" style="width: 200px; height: 200px; margin: 20px auto;">
+                <h4>Dinner</h4>
+            </div>
+
+    </div>
 
 </body>
 </html>
